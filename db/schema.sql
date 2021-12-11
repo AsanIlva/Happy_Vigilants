@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS login_portal;
+CREATE DATABASE login_portal;
+
+USE login_portal;
+
+CREATE TABLE users (
+	id int NOT NULL AUTO_INCREMENT,
+	name VARCHAR(100) NOT NULL,
+	email VARCHAR(100) NOT NULL,
+	password VARCHAR(255) NOT NULL,
+	PRIMARY KEY (id)
+);
